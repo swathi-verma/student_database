@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Database Form</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form action="/" method="POST">
+        
+        <p>Name: <input type="text" name="name" required></p>
+        
+        <p>Roll Number: <input type="number" name="roll_number" required></p>
+        
+        <p>Year: 
+            <select name="year" required>
+                <option value="1st">1st</option>
+                <option value="2nd">2nd</option>
+                <option value="3rd">3rd</option>
+                <option value="4th">4th</option>
+            </select>
+        </p>
+        
+        <p>Semester: 
+            <select name="semester" required>
+                <option value="Sem 1">Semester 1</option>
+                <option value="Sem 2">Semester 2</option>
+                <option value="Sem 3">Semester 3</option>
+                <option value="Sem 4">Semester 4</option>
+                <option value="Sem 5">Semester 5</option>
+                <option value="Sem 6">Semester 6</option>
+                <option value="Sem 7">Semester 7</option>
+                <option value="Sem 8">Semester 8</option>
+            </select>
+        </p>
+        
+        <p>Gender: 
+            <input type="radio" name="gender" value="Male" checked> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+        </p>
+        
+        <p>Email ID: <input type="email" name="email" required></p>
+        
+        <p>Languages Known:<br>
+            <input type="checkbox" name="languages" value="English"> English<br>
+            <input type="checkbox" name="languages" value="Hindi"> Hindi<br>
+            <input type="checkbox" name="languages" value="Gujarati"> Gujarati<br>
+            <input type="checkbox" name="languages" value="Other"> Other
+        </p>
+        
+        <p>Address:<br>
+            <textarea name="address" rows="4" cols="30" required></textarea>
+        </p>
+        
+        <input type="submit" value="Submit Student Data">
+    </form>
+</body>
+</html>
